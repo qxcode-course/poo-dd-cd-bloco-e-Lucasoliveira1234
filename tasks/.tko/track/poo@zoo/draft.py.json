@@ -1,0 +1,24 @@
+{
+    "patches": [
+        {
+            "label": "2025-12-01_19-50-38",
+            "content": "@@ -1,60 +0,0 @@\n-clas Animal(ABC):%0A    def __init__(self, nome: str) -%3E None%0A\n",
+            "lines": "0"
+        },
+        {
+            "label": "2025-12-01_19-54-30",
+            "content": "@@ -1,69 +1,8 @@\n-from typing import Any%0Afrom abc import ABC, abstractmethod%0A%0A\n clas\n-s\n  Ani\n@@ -56,171 +56,5 @@\n None\n-:%0A        self.nome = nome%0A%0A    def apresentar_nome(self):%0A        print(f%22O animal %C3%A9 %7Bself.nome%7D%22)%0A%0A    @abstractmethod%0A    def fazer_som(self) -%3E None:%0A        pass\n %0A\n",
+            "lines": "2"
+        },
+        {
+            "label": "2025-12-01_20-07-15",
+            "content": "@@ -284,97 +284,4 @@\n ass%0A\n-%0A    @abstractmethod%0A    def mover(self) -%3E None:%0A        pass%0A%0Aclass Leao(Animal):%0A    pass%0A\n",
+            "lines": "13"
+        },
+        {
+            "label": "2025-12-01_20-12-02",
+            "content": "from typing import Any\nfrom abc import ABC, abstractmethod\n\nclass Animal(ABC):\n    def __init__(self, nome: str) -> None:\n        self.nome = nome\n\n    def apresentar_nome(self):\n        print(f\"O animal \u00e9 {self.nome}\")\n\n    @abstractmethod\n    def fazer_som(self) -> None:\n        pass\n\n    @abstractmethod\n    def mover(self) -> None:\n        pass\n\nclass Leao(Animal):\n    pass\n",
+            "lines": "20"
+        }
+    ]
+}
